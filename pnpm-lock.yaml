@@ -113,15 +113,6 @@ importers:
       '@electron/universal':
         specifier: 1.5.1
         version: 1.5.1
-      '@jonhollander/builder-util':
-        specifier: workspace:*
-        version: link:../builder-util
-      '@jonhollander/builder-util-runtime':
-        specifier: workspace:*
-        version: link:../builder-util-runtime
-      '@jonhollander/electron-publish':
-        specifier: workspace:*
-        version: link:../electron-publish
       '@malept/flatpak-bundler':
         specifier: ^0.4.0
         version: 0.4.0
@@ -135,10 +126,10 @@ importers:
         specifier: ^1.0.9
         version: 1.0.9
       builder-util:
-        specifier: npm:@jonhollander/builder-util
+        specifier: workspace:*
         version: link:../builder-util
       builder-util-runtime:
-        specifier: npm:@jonhollander/builder-util-runtime
+        specifier: workspace:*
         version: link:../builder-util-runtime
       chromium-pickle-js:
         specifier: ^0.2.0
@@ -150,7 +141,7 @@ importers:
         specifier: ^3.1.8
         version: 3.1.9
       electron-publish:
-        specifier: npm:@jonhollander/electron-publish
+        specifier: workspace:*
         version: link:../electron-publish
       form-data:
         specifier: ^4.0.0
@@ -249,12 +240,6 @@ importers:
       '@babel/preset-react':
         specifier: 7.14.5
         version: 7.14.5(@babel/core@7.15.5)
-      '@jonhollander/dmg-builder':
-        specifier: workspace:*
-        version: link:../dmg-builder
-      '@jonhollander/electron-builder-squirrel-windows':
-        specifier: workspace:*
-        version: link:../electron-builder-squirrel-windows
       '@types/debug':
         specifier: 4.1.7
         version: 4.1.7
@@ -277,10 +262,10 @@ importers:
         specifier: ^6.1.3
         version: 6.1.5
       dmg-builder:
-        specifier: npm:@jonhollander/dmg-builder
+        specifier: workspace:*
         version: link:../dmg-builder
       electron-builder-squirrel-windows:
-        specifier: npm:@jonhollander/electron-builder-squirrel-windows
+        specifier: workspace:*
         version: link:../electron-builder-squirrel-windows
 
   packages/builder-util:
@@ -288,9 +273,6 @@ importers:
       7zip-bin:
         specifier: ~5.2.0
         version: 5.2.0
-      '@jonhollander/builder-util-runtime':
-        specifier: workspace:*
-        version: link:../builder-util-runtime
       '@types/debug':
         specifier: ^4.1.6
         version: 4.1.7
@@ -301,7 +283,7 @@ importers:
         specifier: ^1.0.9
         version: 1.0.9
       builder-util-runtime:
-        specifier: npm:@jonhollander/builder-util-runtime
+        specifier: workspace:*
         version: link:../builder-util-runtime
       chalk:
         specifier: ^4.1.2
@@ -371,23 +353,14 @@ importers:
 
   packages/dmg-builder:
     dependencies:
-      '@jonhollander/app-builder-lib':
-        specifier: workspace:*
-        version: link:../app-builder-lib
-      '@jonhollander/builder-util':
-        specifier: workspace:*
-        version: link:../builder-util
-      '@jonhollander/builder-util-runtime':
-        specifier: workspace:*
-        version: link:../builder-util-runtime
       app-builder-lib:
-        specifier: npm:@jonhollander/app-builder-lib
+        specifier: workspace:*
         version: link:../app-builder-lib
       builder-util:
-        specifier: npm:@jonhollander/builder-util
+        specifier: workspace:*
         version: link:../builder-util
       builder-util-runtime:
-        specifier: npm:@jonhollander/builder-util-runtime
+        specifier: workspace:*
         version: link:../builder-util-runtime
       fs-extra:
         specifier: ^10.1.0
@@ -415,32 +388,20 @@ importers:
 
   packages/electron-builder:
     dependencies:
-      '@jonhollander/app-builder-lib':
-        specifier: workspace:*
-        version: link:../app-builder-lib
-      '@jonhollander/builder-util':
-        specifier: workspace:*
-        version: link:../builder-util
-      '@jonhollander/builder-util-runtime':
-        specifier: workspace:*
-        version: link:../builder-util-runtime
-      '@jonhollander/dmg-builder':
-        specifier: workspace:*
-        version: link:../dmg-builder
       app-builder-lib:
-        specifier: npm:@jonhollander/app-builder-lib
+        specifier: workspace:*
         version: link:../app-builder-lib
       builder-util:
-        specifier: npm:@jonhollander/builder-util
+        specifier: workspace:*
         version: link:../builder-util
       builder-util-runtime:
-        specifier: npm:@jonhollander/builder-util-runtime
+        specifier: workspace:*
         version: link:../builder-util-runtime
       chalk:
         specifier: ^4.1.2
         version: 4.1.2
       dmg-builder:
-        specifier: npm:@jonhollander/dmg-builder
+        specifier: workspace:*
         version: link:../dmg-builder
       fs-extra:
         specifier: ^10.1.0
@@ -473,20 +434,14 @@ importers:
 
   packages/electron-builder-squirrel-windows:
     dependencies:
-      '@jonhollander/app-builder-lib':
-        specifier: workspace:*
-        version: link:../app-builder-lib
-      '@jonhollander/builder-util':
-        specifier: workspace:*
-        version: link:../builder-util
       app-builder-lib:
-        specifier: npm:@jonhollander/app-builder-lib
+        specifier: workspace:*
         version: link:../app-builder-lib
       archiver:
         specifier: ^5.3.1
         version: 5.3.2
       builder-util:
-        specifier: npm:@jonhollander/builder-util
+        specifier: workspace:*
         version: link:../builder-util
       fs-extra:
         specifier: ^10.1.0
@@ -501,56 +456,38 @@ importers:
 
   packages/electron-forge-maker-appimage:
     dependencies:
-      '@jonhollander/app-builder-lib':
-        specifier: workspace:*
-        version: link:../app-builder-lib
       app-builder-lib:
-        specifier: npm:@jonhollander/app-builder-lib
+        specifier: workspace:*
         version: link:../app-builder-lib
 
   packages/electron-forge-maker-nsis:
     dependencies:
-      '@jonhollander/app-builder-lib':
-        specifier: workspace:*
-        version: link:../app-builder-lib
       app-builder-lib:
-        specifier: npm:@jonhollander/app-builder-lib
+        specifier: workspace:*
         version: link:../app-builder-lib
 
   packages/electron-forge-maker-nsis-web:
     dependencies:
-      '@jonhollander/app-builder-lib':
-        specifier: workspace:*
-        version: link:../app-builder-lib
       app-builder-lib:
-        specifier: npm:@jonhollander/app-builder-lib
+        specifier: workspace:*
         version: link:../app-builder-lib
 
   packages/electron-forge-maker-snap:
     dependencies:
-      '@jonhollander/app-builder-lib':
-        specifier: workspace:*
-        version: link:../app-builder-lib
       app-builder-lib:
-        specifier: npm:@jonhollander/app-builder-lib
+        specifier: workspace:*
         version: link:../app-builder-lib
 
   packages/electron-publish:
     dependencies:
-      '@jonhollander/builder-util':
-        specifier: workspace:*
-        version: link:../builder-util
-      '@jonhollander/builder-util-runtime':
-        specifier: workspace:*
-        version: link:../builder-util-runtime
       '@types/fs-extra':
         specifier: ^9.0.11
         version: 9.0.13
       builder-util:
-        specifier: npm:@jonhollander/builder-util
+        specifier: workspace:*
         version: link:../builder-util
       builder-util-runtime:
-        specifier: npm:@jonhollander/builder-util-runtime
+        specifier: workspace:*
         version: link:../builder-util-runtime
       chalk:
         specifier: ^4.1.2
@@ -571,11 +508,8 @@ importers:
 
   packages/electron-updater:
     dependencies:
-      '@jonhollander/builder-util-runtime':
-        specifier: workspace:*
-        version: link:../builder-util-runtime
       builder-util-runtime:
-        specifier: npm:@jonhollander/builder-util-runtime
+        specifier: workspace:*
         version: link:../builder-util-runtime
       fs-extra:
         specifier: ^10.1.0
@@ -623,38 +557,14 @@ importers:
       '@jest/core':
         specifier: ^27.5.1
         version: 27.5.1
-      '@jonhollander/app-builder-lib':
-        specifier: workspace:*
-        version: link:../packages/app-builder-lib
-      '@jonhollander/builder-util':
-        specifier: workspace:*
-        version: link:../packages/builder-util
-      '@jonhollander/builder-util-runtime':
-        specifier: workspace:*
-        version: link:../packages/builder-util-runtime
-      '@jonhollander/dmg-builder':
-        specifier: workspace:*
-        version: link:../packages/dmg-builder
-      '@jonhollander/electron-builder':
-        specifier: workspace:*
-        version: link:../packages/electron-builder
-      '@jonhollander/electron-builder-squirrel-windows':
-        specifier: workspace:*
-        version: link:../packages/electron-builder-squirrel-windows
-      '@jonhollander/electron-publish':
-        specifier: workspace:*
-        version: link:../packages/electron-publish
-      '@jonhollander/electron-updater':
-        specifier: workspace:*
-        version: link:../packages/electron-updater
       app-builder-lib:
-        specifier: npm:@jonhollander/app-builder-lib
+        specifier: workspace:*
         version: link:../packages/app-builder-lib
       builder-util:
-        specifier: npm:@jonhollander/builder-util
+        specifier: workspace:*
         version: link:../packages/builder-util
       builder-util-runtime:
-        specifier: npm:@jonhollander/builder-util-runtime
+        specifier: workspace:*
         version: link:../packages/builder-util-runtime
       chalk:
         specifier: ^4.1.2
@@ -669,19 +579,19 @@ importers:
         specifier: 1.4.3
         version: 1.4.3
       dmg-builder:
-        specifier: npm:@jonhollander/dmg-builder
+        specifier: workspace:*
         version: link:../packages/dmg-builder
       electron-builder:
-        specifier: npm:@jonhollander/electron-builder
+        specifier: workspace:*
         version: link:../packages/electron-builder
       electron-builder-squirrel-windows:
-        specifier: npm:@jonhollander/electron-builder-squirrel-windows
+        specifier: workspace:*
         version: link:../packages/electron-builder-squirrel-windows
       electron-publish:
-        specifier: npm:@jonhollander/electron-publish
+        specifier: workspace:*
         version: link:../packages/electron-publish
       electron-updater:
-        specifier: npm:@jonhollander/electron-updater
+        specifier: workspace:*
         version: link:../packages/electron-updater
       fs-extra:
         specifier: ^10.1.0

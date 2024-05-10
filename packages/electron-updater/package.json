@@ -1,5 +1,5 @@
 {
-  "name": "@jonhollander/electron-updater",
+  "name": "electron-updater",
   "version": "6.2.0",
   "description": "Cross platform updater for electron applications",
   "main": "out/main.js",
@@ -16,15 +16,14 @@
     "out"
   ],
   "dependencies": {
-    "@jonhollander/builder-util-runtime": "workspace:*",
+    "builder-util-runtime": "workspace:*",
     "fs-extra": "^10.1.0",
     "js-yaml": "^4.1.0",
     "lazy-val": "^1.0.5",
     "lodash.escaperegexp": "^4.1.2",
     "lodash.isequal": "^4.5.0",
     "semver": "^7.3.8",
-    "tiny-typed-emitter": "^2.1.0",
-    "builder-util-runtime": "npm:@jonhollander/builder-util-runtime"
+    "tiny-typed-emitter": "^2.1.0"
   },
   "devDependencies": {
     "@types/fs-extra": "9.0.13",

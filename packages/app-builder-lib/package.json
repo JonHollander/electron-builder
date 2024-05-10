@@ -1,5 +1,5 @@
 {
-  "name": "@jonhollander/app-builder-lib",
+  "name": "app-builder-lib",
   "description": "electron-builder lib",
   "version": "24.13.4",
   "main": "out/index.js",
@@ -54,12 +54,12 @@
     "@types/fs-extra": "9.0.13",
     "async-exit-hook": "^2.0.1",
     "bluebird-lst": "^1.0.9",
-    "@jonhollander/builder-util": "workspace:*",
-    "@jonhollander/builder-util-runtime": "workspace:*",
+    "builder-util": "workspace:*",
+    "builder-util-runtime": "workspace:*",
     "chromium-pickle-js": "^0.2.0",
     "debug": "^4.3.4",
     "ejs": "^3.1.8",
-    "@jonhollander/electron-publish": "workspace:*",
+    "electron-publish": "workspace:*",
     "form-data": "^4.0.0",
     "fs-extra": "^10.1.0",
     "hosted-git-info": "^4.1.0",
@@ -72,10 +72,7 @@
     "sanitize-filename": "^1.6.3",
     "semver": "^7.3.8",
     "tar": "^6.1.12",
-    "temp-file": "^3.4.0",
-    "builder-util": "npm:@jonhollander/builder-util",
-    "builder-util-runtime": "npm:@jonhollander/builder-util-runtime",
-    "electron-publish": "npm:@jonhollander/electron-publish"
+    "temp-file": "^3.4.0"
   },
   "///": "babel in devDependencies for proton tests",
   "devDependencies": {
@@ -105,16 +102,12 @@
     "@types/js-yaml": "4.0.3",
     "@types/semver": "7.3.8",
     "@types/tar": "^6.1.3",
-    "@jonhollander/dmg-builder": "workspace:*",
-    "@jonhollander/electron-builder-squirrel-windows": "workspace:*",
-    "dmg-builder": "npm:@jonhollander/dmg-builder",
-    "electron-builder-squirrel-windows": "npm:@jonhollander/electron-builder-squirrel-windows"
+    "dmg-builder": "workspace:*",
+    "electron-builder-squirrel-windows": "workspace:*"
   },
   "peerDependencies": {
-    "@jonhollander/dmg-builder": "workspace:*",
-    "@jonhollander/electron-builder-squirrel-windows": "workspace:*",
-    "dmg-builder": "npm:@jonhollander/dmg-builder",
-    "electron-builder-squirrel-windows": "npm:@jonhollander/electron-builder-squirrel-windows"
+    "dmg-builder": "workspace:*",
+    "electron-builder-squirrel-windows": "workspace:*"
   },
   "//": "electron-builder-squirrel-windows and dmg-builder added as dev dep for tests (as otherwise `require` doesn't work using Yarn 2)",
   "typings": "./out/index.d.ts"

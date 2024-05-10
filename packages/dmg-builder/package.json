@@ -1,5 +1,5 @@
 {
-	"name": "@jonhollander/dmg-builder",
+	"name": "dmg-builder",
 	"version": "24.13.3",
 	"main": "out/dmgUtil.js",
 	"author": "Vladimir Krivosheev",
@@ -17,15 +17,12 @@
 		"vendor"
 	],
 	"dependencies": {
-		"@jonhollander/app-builder-lib": "workspace:*",
-		"@jonhollander/builder-util": "workspace:*",
-		"@jonhollander/builder-util-runtime": "workspace:*",
+		"app-builder-lib": "workspace:*",
+		"builder-util": "workspace:*",
+		"builder-util-runtime": "workspace:*",
 		"fs-extra": "^10.1.0",
 		"iconv-lite": "^0.6.2",
-		"js-yaml": "^4.1.0",
-    "app-builder-lib": "npm:@jonhollander/app-builder-lib",
-    "builder-util": "npm:@jonhollander/builder-util",
-    "builder-util-runtime": "npm:@jonhollander/builder-util-runtime"
+		"js-yaml": "^4.1.0"
 	},
 	"optionalDependencies": {
 		"dmg-license": "^1.0.11"
