@@ -28,7 +28,7 @@
     "yargs": "^17.6.2",
     "app-builder-lib": "npm:@jonhollander/app-builder-lib",
     "builder-util": "npm:@jonhollander/builder-util",
-    "builder-util-runtime": "npm:@jonhollander/builder-util-runtime@9.2.5",
+    "builder-util-runtime": "npm:@jonhollander/builder-util-runtime",
     "dmg-builder": "npm:@jonhollander/dmg-builder",
     "electron-builder": "npm:@jonhollander/electron-builder",
     "electron-builder-squirrel-windows": "npm:@jonhollander/electron-builder-squirrel-windows",
