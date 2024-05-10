@@ -1579,6 +1579,22 @@
           "default": "stable",
           "description": "The channel."
         },
+        "initialStatus": {
+          "anyOf": [
+            {
+              "enum": [
+                "DRAFT",
+                "PUBLISHED"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": "PUBLISHED",
+          "description": "Initial status of the release"
+        },
         "platform": {
           "description": "The target Platform. Is set programmatically explicitly during publishing.",
           "type": [

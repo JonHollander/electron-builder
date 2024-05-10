@@ -236,7 +236,7 @@ export class KeygenPublisher extends HttpPublisher {
       attributes: {
         version: this.version,
         channel: this.info.channel || "stable",
-        status: "PUBLISHED",
+        status: this.info.initialStatus ?? "PUBLISHED",
       },
       relationships: {
         product: {
