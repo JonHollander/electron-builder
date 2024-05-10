@@ -1,5 +1,5 @@
 {
-  "name": "electron-publish",
+  "name": "@jonhollander/electron-publish",
   "version": "24.13.1",
   "main": "out/publisher.js",
   "author": "Vladimir Krivosheev",
@@ -16,12 +16,14 @@
   ],
   "dependencies": {
     "@types/fs-extra": "^9.0.11",
-    "builder-util": "workspace:*",
-    "builder-util-runtime": "workspace:*",
+    "@jonhollander/builder-util": "workspace:*",
+    "@jonhollander/builder-util-runtime": "workspace:*",
     "chalk": "^4.1.2",
     "fs-extra": "^10.1.0",
     "lazy-val": "^1.0.5",
-    "mime": "^2.5.2"
+    "mime": "^2.5.2",
+    "builder-util": "npm:@jonhollander/builder-util",
+    "builder-util-runtime": "npm:@jonhollander/builder-util-runtime"
   },
   "typings": "./out/publisher.d.ts",
   "devDependencies": {

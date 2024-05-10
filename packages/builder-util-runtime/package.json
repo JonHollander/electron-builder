@@ -1,5 +1,5 @@
 {
-  "name": "builder-util-runtime",
+  "name": "@jonhollander/builder-util-runtime",
   "version": "9.2.5",
   "main": "out/index.js",
   "author": "Vladimir Krivosheev",

@@ -1,5 +1,5 @@
 {
-  "name": "electron-forge-maker-snap",
+  "name": "@jonhollander/electron-forge-maker-snap",
   "version": "24.13.3",
   "main": "main.js",
   "author": "Vladimir Krivosheev",
@@ -15,6 +15,7 @@
     "*.js"
   ],
   "dependencies": {
-    "app-builder-lib": "workspace:*"
+    "@jonhollander/app-builder-lib": "workspace:*",
+    "app-builder-lib": "npm:@jonhollander/app-builder-lib"
   }
 }
