@@ -24,7 +24,7 @@
     "lodash.isequal": "^4.5.0",
     "semver": "^7.3.8",
     "tiny-typed-emitter": "^2.1.0",
-    "builder-util-runtime": "npm:@jonhollander/builder-util-runtime"
+    "builder-util-runtime": "npm:@jonhollander/builder-util-runtime@9.2.5"
   },
   "devDependencies": {
     "@types/fs-extra": "9.0.13",

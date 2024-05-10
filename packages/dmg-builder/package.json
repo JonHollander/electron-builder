@@ -25,7 +25,7 @@
 		"js-yaml": "^4.1.0",
     "app-builder-lib": "npm:@jonhollander/app-builder-lib",
     "builder-util": "npm:@jonhollander/builder-util",
-    "builder-util-runtime": "npm:@jonhollander/builder-util-runtime"
+    "builder-util-runtime": "npm:@jonhollander/builder-util-runtime@9.2.5"
 	},
 	"optionalDependencies": {
 		"dmg-license": "^1.0.11"
