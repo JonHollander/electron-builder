@@ -1563,13 +1563,7 @@
         "channel": {
           "anyOf": [
             {
-              "enum": [
-                "alpha",
-                "beta",
-                "dev",
-                "rc",
-                "stable"
-              ],
+              "enum": ["alpha", "beta", "dev", "rc", "stable"],
               "type": "string"
             },
             {
@@ -1579,12 +1573,22 @@
           "default": "stable",
           "description": "The channel."
         },
+        "initialStatus": {
+          "anyOf": [
+            {
+              "enum": ["draft", "published"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": "published",
+          "description": "Initial status of the release"
+        },
         "platform": {
           "description": "The target Platform. Is set programmatically explicitly during publishing.",
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "product": {
           "description": "Keygen product's UUID",
@@ -1592,9 +1596,7 @@
         },
         "provider": {
           "description": "The provider. Must be `keygen`.",
-          "enum": [
-            "keygen"
-          ],
+          "enum": ["keygen"],
           "type": "string"
         },
         "publishAutoUpdate": {
@@ -1622,16 +1624,10 @@
         "timeout": {
           "default": 120000,
           "description": "Request timeout in milliseconds. (Default is 2 minutes; O is ignored)",
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "updaterCacheDirName": {
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         }
       },
       "required": [
